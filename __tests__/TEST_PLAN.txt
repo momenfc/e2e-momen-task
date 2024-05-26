@@ -1,0 +1,67 @@
+Test Cases
+----------
+1- Test searchFeature
+     - should return same list if no search key
+     - should return list with items which contains Item 4
+     - should return list with items which contains Item 2
+2- Test filterPriceRangeFeature
+     - should return all items in list if no minPrice and maxPrice
+     - should return list with items which have price between 10 and 50
+     - should return list with items which have price between 10 and 50 even if inverted
+     - should return list with items which have price between 40 and 100
+     - should return list with items which have price between 10 and 35
+     - should return list with items which have price greaterthan or equal 35 if no maxPrice
+     - should return list with items which have price less than 35 if no minPrice
+     - should return empty list
+     - should return list with items which have price equal 30
+3- Test sortFeature
+     - should return same list if no sort key
+     - should return sorted list by name
+     - should return sorted list by lowestPrice
+     - should return sorted list by highestPrice
+4- Test addToCartFeature
+     - calls onSuccess with response data when fetch is successful and success is true
+     - calls onError with response data when fetch is successful and success is false
+     - calls onError with error when fetch fails
+     - does not call onError if it is not provided
+5- Test checkoutFeature
+     - calls onSuccess with response data if the fetch is successful
+     - calls onError with response data if the fetch response is unsuccessful
+     - calls onError with an error if the fetch throws an error
+
+Test Record
+-----------
+ ✓ __tests__/features.test.tsx (23)
+   ✓ searchFeature (3)
+     ✓ should return same list if no search key
+     ✓ should return list with items which contains Item 4
+     ✓ should return list with items which contains Item 2
+   ✓ filterPriceRangeFeature (9)
+     ✓ should return all items in list if no minPrice and maxPrice
+     ✓ should return list with items which have price between 10 and 50
+     ✓ should return list with items which have price between 10 and 50 even if inverted
+     ✓ should return list with items which have price between 40 and 100
+     ✓ should return list with items which have price between 10 and 35
+     ✓ should return list with items which have price greaterthan or equal 35 if no maxPrice
+     ✓ should return list with items which have price less than 35 if no minPrice
+     ✓ should return empty list
+     ✓ should return list with items which have price equal 30
+   ✓ sortFeature (4)
+     ✓ should return same list if no sort key
+     ✓ should return sorted list by name
+     ✓ should return sorted list by lowestPrice
+     ✓ should return sorted list by highestPrice
+   ✓ addToCartFeature (4)
+     ✓ calls onSuccess with response data when fetch is successful and success is true
+     ✓ calls onError with response data when fetch is successful and success is false
+     ✓ calls onError with error when fetch fails
+     ✓ does not call onError if it is not provided
+   ✓ checkoutFeature (3)
+     ✓ calls onSuccess with response data if the fetch is successful
+     ✓ calls onError with response data if the fetch response is unsuccessful
+     ✓ calls onError with an error if the fetch throws an error
+
+ Test Files  1 passed (1)
+      Tests  23 passed (23)
+   Start at  10:56:40
+   Duration  460ms (transform 30ms, setup 0ms, collect 26ms, tests 6ms, environment 245ms, prepare 90ms)
