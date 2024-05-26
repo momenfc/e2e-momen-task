@@ -3,7 +3,6 @@ import fs from 'fs';
 import path from 'path';
 
 const dataFilePath = path.join(process.cwd(), 'public/data', 'cartItems.json');
-
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   //   console.log('req.method', req.method);
 

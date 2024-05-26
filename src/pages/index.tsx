@@ -9,7 +9,7 @@ import { addToCartFeature } from '@/features';
 const inter = Inter({ subsets: ['latin'] });
 
 // Uitels
-const baseUrl = process.env.BASE_URL;
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 type HomeProps = {
   items: Item[];

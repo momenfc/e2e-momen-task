@@ -1,4 +1,4 @@
-const baseUrl = process.env.BASE_URL;
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const searchFeature = (items: Item[], text: string) => {
   if (!text) return items;
