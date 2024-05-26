@@ -1,4 +1,3 @@
-import { checkoutFeature } from '@/features';
 import React from 'react';
 
 type ShoppingCartProps = {
@@ -7,12 +6,9 @@ type ShoppingCartProps = {
   onRemoveBtnClick: (id: number) => void;
 };
 function ShoppingCart({ cartItems, setCartItems, onRemoveBtnClick }: ShoppingCartProps) {
-  const handleCheckout = async () => {
-    checkoutFeature(resData => {
-      const newCartItems = resData.data;
-      setCartItems(newCartItems);
-      alert(`Checkout complete successfully`);
-    });
+  const handleCheckout = () => {
+    setCartItems([]);
+    alert(`Checkout complete successfully`);
   };
 
   return (

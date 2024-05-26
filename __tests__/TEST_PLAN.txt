@@ -19,19 +19,11 @@ Test Cases
      - should return sorted list by name
      - should return sorted list by lowestPrice
      - should return sorted list by highestPrice
-4- Test addToCartFeature
-     - calls onSuccess with response data when fetch is successful and success is true
-     - calls onError with response data when fetch is successful and success is false
-     - calls onError with error when fetch fails
-     - does not call onError if it is not provided
-5- Test checkoutFeature
-     - calls onSuccess with response data if the fetch is successful
-     - calls onError with response data if the fetch response is unsuccessful
-     - calls onError with an error if the fetch throws an error
+
 
 Test Record
 -----------
- ✓ __tests__/features.test.tsx (23)
+✓ __tests__/features.test.tsx (16)
    ✓ searchFeature (3)
      ✓ should return same list if no search key
      ✓ should return list with items which contains Item 4
@@ -51,17 +43,8 @@ Test Record
      ✓ should return sorted list by name
      ✓ should return sorted list by lowestPrice
      ✓ should return sorted list by highestPrice
-   ✓ addToCartFeature (4)
-     ✓ calls onSuccess with response data when fetch is successful and success is true
-     ✓ calls onError with response data when fetch is successful and success is false
-     ✓ calls onError with error when fetch fails
-     ✓ does not call onError if it is not provided
-   ✓ checkoutFeature (3)
-     ✓ calls onSuccess with response data if the fetch is successful
-     ✓ calls onError with response data if the fetch response is unsuccessful
-     ✓ calls onError with an error if the fetch throws an error
 
  Test Files  1 passed (1)
-      Tests  23 passed (23)
-   Start at  10:56:40
-   Duration  460ms (transform 30ms, setup 0ms, collect 26ms, tests 6ms, environment 245ms, prepare 90ms)
+      Tests  16 passed (16)
+   Start at  12:47:11
+   Duration  42ms
